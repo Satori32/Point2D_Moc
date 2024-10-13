@@ -20,7 +20,7 @@ Point2D<T> ConstructPoint2D(T X, T Y) {
 }
 
 template<class T>
-Point2D<T>& LotXY(Point2D<T>& In, double Theta) {
+Point2D<T> LotXY(Point2D<T>& In, double Theta) {
 	double PI = 3.1415926535;
 	double Rad = PI / 180.0;
 
@@ -53,4 +53,6 @@ int main() {
 	Point2D<double> P2 = LotXY(P, 16);
 
 	ToZero(P);
+
+	return 0;
 }
